@@ -36,4 +36,4 @@ Data inicio: 07/10  Término: 21/10
 # Observação:
  - Os testes deverão ser realizados no Browser Google chrome, por conta de um dos testes não desempenhar devidamente sua função no Edge.
  - O Teste automatizado número 1: Simule seu Título Aposentadoria se refere ao erro encontrado:
-Foi encontrado um erro no processo de Descubra seu Título, o botão, cujo é possível prosseguir sem especificar o período de aplicação, não carrega a página seguinte, ou    seja, não faz o devido redirecionamento. Uma vez que esta funcionalidade não está disponível prejudica a experiência do usuário que quer encontrar títulos para aplicação conforme o seu perfil.
+ - Foi ontrado um erro no processo de Descubra seu Título, o botão, cujo é possível prosseguir sem especificar o período de aplicação, não carrega a página seguinte, ou    seja, não faz o devido redirecionamento. Uma vez que esta funcionalidade não está disponível prejudica a experiência do usuário que quer encontrar títulos para aplicação conforme o seu perfil.
