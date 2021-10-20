@@ -23,6 +23,7 @@ Data inicio: 07/10  Término: 21/10
 
 ## Site Escolhido:
 - https://www.tesourodireto.com.br/
+
 ## No projeto será possível encontrar:
 
  - Formato Gherkin para a criação dos cenários.
