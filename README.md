@@ -32,3 +32,7 @@ Data inicio: 07/10  Término: 21/10
  - Teste de Carga e stress.
  - Relatório de Erros.
  - Consulta utilizando uma API (Correios).
+
+# Observação:
+Os testes deverão ser realizados no Browser Google chrome, por conta de um dos testes não desempenhar devidamente sua função no Edge.
+
