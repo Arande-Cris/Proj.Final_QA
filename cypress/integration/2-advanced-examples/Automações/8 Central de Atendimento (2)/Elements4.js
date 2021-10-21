@@ -7,11 +7,7 @@ export const TESOURO ={
     COOKIE: '#onetrust-accept-btn-handler',
     PESQUISAR:'#field-search-question-list',
     ESCREVER: '["lei]',
+    RESULTADO: '#nenhum-resultado-mensagem',
+    NAOENCONTROU: '.td-internal-wrapper--no-mobile > .td-internal-heading > .secundary-heading',
     
-    
-    
-    
-    
-    
-    
-    }
+}

@@ -6,8 +6,10 @@ export const TESOURO ={
     FECHA:'.td-notification__icon--close',
     PESQUISAR:'#field-search-question-list',
     ESCREVER: '@#$$%',
+    RESULTADO: '#nenhum-resultado-mensagem',
     
     
+   
     
     
     

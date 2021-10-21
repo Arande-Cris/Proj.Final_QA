@@ -1,32 +1,23 @@
 /// <reference types="cypress" />
-import acessar from "../3 Seu Título Estudante/Index(3)"
 const el = require ("../3 Seu Título Estudante/Elements(3)").TESOURO
+import acessar from "../3 Seu Título Estudante/Index(3)"
+
 
 
 describe('Títulos Para Estudantes', () =>{
-     
- it('Visitar Página', ()=>{
-   acessar.visitarpagina()
-   
-  })
-
- it('Descubra seu Título: Estudos', ()=>{
-   acessar.visitarpagina()
-   acessar.EntrarMenuDescubra()
-   
+ 
+  beforeEach(() => {
+    acessar.visitarpagina()
+    acessar.entrarmenudescubra()
   })
 
  it('Simulação Tesouro IPCA+ 2026', ()=>{
-   acessar.visitarpagina()
-   acessar.EntrarMenuDescubra()
-   acessar.SimulandoPrefixado2026()
+    acessar.simulandoprefixado2026()
 
   })
 
  it('Análise de Valor limite', ()=>{
-   acessar.visitarpagina()
-   acessar.EntrarMenuDescubra()
-    acessar.SimulandoValorLimite()
+   acessar.simulandovalorlimite()
 
   })
   

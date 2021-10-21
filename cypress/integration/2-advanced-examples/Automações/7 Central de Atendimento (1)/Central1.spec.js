@@ -4,15 +4,14 @@ import acessar from "../7 Central de Atendimento (1)/Index3"
 
 
 describe('Pesquisar perguntas frequentes', () =>{
-    
-             
-  it('Acessar Pagina',() =>{
-   acessar.visitarpagina()
    
+  beforeEach(() => {
+    acessar.visitarpagina()
+
   })
-   
+             
   it('Pesquisar',() =>{
-   acessar.BUSCACOMCARACTER()
+   acessar.buscarcaracter()
    
   })
        

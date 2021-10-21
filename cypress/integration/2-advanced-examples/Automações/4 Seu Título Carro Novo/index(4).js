@@ -14,19 +14,20 @@ class acessar{
     }
 
 
-    EntrarMenuDescubra(){
-       cy.get(el.MENU).click({force: true})
-       cy.get(el.SIMULADOR).click({force: true})
-       cy.get(el.DESCUBRA).click({force: true})
-       cy.get(el.COMEÇAR).click()
-       cy.get(el.OBJETIVO).click()
-       cy.get(el.PRAZO).click({force: true})
-       cy.get(el.RETORNO).click()
-       cy.get(el.RESULTADO).click({force: true})
+    entrarmenudescubra(){
+     cy.get(el.MENU).click({force: true})
+     cy.get(el.SIMULADOR).click({force: true})
+     cy.get(el.DESCUBRA).click({force: true})
+     cy.get(el.COMEÇAR).click()
+     cy.get(el.OBJETIVO).click({force: true})
+     cy.get(el.PRAZO).click({force: true})
+     cy.get(el.RETORNO).click()
+     cy.get(el.RESULTADO).click({force: true})
 
     }
 
-    SimulandoPrefixado2026(){
+    simulandoprefixado2026(){
+     cy.get(el.SUGESTAO).should('have.text', 'Tesouro Prefixado \n\t\t\t\n\t\t\t2026\n\t\t')
      cy.get(el.SIMULANDO).click()
      cy.get(el.QTOINVESTIRHJ).click()
      cy.get(el.RESGATAR).type(el.VALOR1)
@@ -37,6 +38,9 @@ class acessar{
      cy.get(el.ENVIAREMAIL).click()
      cy.get(el.DIGITAREMAIL).type(el.EMAIL)
      cy.get(el.ENVIAR).click()
+     cy.get(el.CONFIRMDEENVIO).should('have.text', 'Enviar por E-mail')
+     cy.get(el.CONFIRMDEENVIO2).should('have.text', '\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tE-mail enviado\n\t\t\t\t\t\t\t\t\t')
+   
 
     }
 }

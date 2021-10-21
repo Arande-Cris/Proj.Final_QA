@@ -1,18 +1,16 @@
 /// <reference types="cypress" />
-
-import acessar from "../2 Seu título Aposentadoria (1.1)/Index2"
 const el = require("../2 Seu título Aposentadoria (1.1)/Elements2").TESOURO
+import acessar from "../2 Seu título Aposentadoria (1.1)/Index2"
 
 describe('Sem prazo', () =>{
     
-             
-    it('Acessar Pagina',() =>{
-     acessar.visitarpagina()
-   
+    beforeEach(() => {
+        acessar.visitarpagina()
+        
     })
-   
+             
     it('Pesquisar',() =>{
-     acessar.APOSENTADORIASEMPRAZO()
+     acessar.aposentadoriasemprazo()
    
     })
        

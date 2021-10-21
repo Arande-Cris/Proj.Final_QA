@@ -12,7 +12,7 @@ class acessar{
     cy.get(el.COOKIE).click()
   }
 
- EntrarMenuDescubra(){
+ entrarmenudescubra(){
    cy.get(el.OPÇÕES).click()
    cy.get(el.SIMULADOR).click()
    cy.get(el.DESCUBRA).click()
@@ -23,7 +23,8 @@ class acessar{
    cy.get(el.RESULTADO).click({force: true})
   }
 
- SimularSelic2024(){
+ simularselic2024(){
+   cy.get(el.SUGESTAO).should('have.text', 'Tesouro Selic \n\t\t\t\n\t\t\t2024\n\t\t')
    cy.get(el.SIMULANDO).click()
    cy.get(el.QTOINVESTIR).click()
    cy.get(el.APORTE).type(el.VALOR1)
@@ -33,9 +34,13 @@ class acessar{
    cy.get(el.ENVIAREMAIL).click()
    cy.get(el.DIGITAREMAIL).type(el.EMAIL)
    cy.get(el.ENVIAR).click()
+   cy.get(el.CONFIRMDEENVIO).should('have.text', 'Enviar por E-mail')
+   cy.get(el.CONFIRMDEENVIO2).should('have.text', '\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tE-mail enviado\n\t\t\t\t\t\t\t\t\t')
+   
  }
 
- SimularSelic2024QTOResgatar(){
+ simularselic2024resgatar(){
+   cy.get(el.SUGESTAO).should('have.text', 'Tesouro Selic \n\t\t\t\n\t\t\t2024\n\t\t')
    cy.get(el.SIMULANDO).click()
    cy.get(el.QTORESGATAR).click()
    cy.get(el.APORTEUNICO).type(el.VALOR3)
@@ -46,6 +51,8 @@ class acessar{
    cy.get(el.ENVIAREMAIL).click()
    cy.get(el.DIGITAREMAIL).type(el.EMAIL)
    cy.get(el.ENVIAR).click()
+   cy.get(el.CONFIRMDEENVIO).should('have.text', 'Enviar por E-mail')
+   cy.get(el.CONFIRMDEENVIO2).should('have.text', '\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tE-mail enviado\n\t\t\t\t\t\t\t\t\t')
  }
 
 

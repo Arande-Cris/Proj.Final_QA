@@ -5,5 +5,6 @@ export const Elementos = {
     INVEST:':nth-child(2) > .td-nav__list-item__link',
     INVEST2:':nth-child(2) > .td-nav__sublist > :nth-child(1) > .td-nav__sublist__link',
     VIDEO:'[href="videos/impostos-e-taxas-tesouro-direto.htm"]',
+    TITULO: '.td-internal-heading__destaque---video__content__title',
 }
 

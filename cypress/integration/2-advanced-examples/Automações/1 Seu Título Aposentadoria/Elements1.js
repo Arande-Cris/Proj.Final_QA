@@ -9,8 +9,8 @@ export const TESOURO ={
     PRAZO: '[data-prazo="M"]',
     RETORNO: '[data-perfil="PRF"]',
     RESULTADO: '.tdsimu-center-button > .btn',
-    
-    
+    SUGESTAO:'.tdsim-investment-values__card__title',
+    NOMETITULO: 'Tesouro Prefixado \n\t\t\t\n\t\t\t2026\n\t\t'
     
     
     

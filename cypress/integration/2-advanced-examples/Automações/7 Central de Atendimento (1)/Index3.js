@@ -13,13 +13,15 @@ class acessar{
 
     }
 
-   BUSCACOMCARACTER(){
-        cy.get(el.MENU).click()
-        cy.get(el.TITULO).click({force: true})
-        cy.get(el.COOKIE).click()
-        cy.get(el.FECHA).click({force: true})
-        cy.get(el.PESQUISAR).click({force: true})
-        cy.get(el.PESQUISAR).type(el.ESCREVER, "{enter}")
+   buscarcaracter(){
+     cy.get(el.MENU).click()
+     cy.get(el.TITULO).click({force: true})
+     //  cy.get(el.COOKIE).click({force: true})
+     cy.get(el.FECHA).click({force: true})
+     cy.get(el.PESQUISAR).click({force: true})
+     cy.get(el.PESQUISAR).type(el.ESCREVER, "{enter}")
+     cy.get(el.RESULTADO).should('have.text', 'Sua pesquisa por "@#$$%" não encontrou resultados')
+        
         
     }
    

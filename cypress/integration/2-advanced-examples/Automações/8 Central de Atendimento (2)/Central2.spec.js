@@ -5,14 +5,13 @@ import acessar from "../8 Central de Atendimento (2)/Index4"
 
 describe('Palavra válida com aspas', () =>{
     
-             
-    it('Acessar Pagina',() =>{
+    beforeEach(() => {
      acessar.visitarpagina()
-   
-    })
+     
+    })    
    
     it('Pesquisar',() =>{
-     acessar.PALAVRACOMASPAS()
+     acessar.palavracomaspas()
    
     })
        

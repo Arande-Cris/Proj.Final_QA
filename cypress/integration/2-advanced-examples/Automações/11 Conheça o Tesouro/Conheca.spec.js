@@ -4,26 +4,29 @@ import acessar from '../11 Conheça o Tesouro/index(conheca)'
   
 
 describe('Explorar Conheça', () =>{
-
+  beforeEach(() => {
+    acessar.visitarpagina()
+    
+  })
       
   it('Conheça o Tesouro Direto ',() =>{
-    acessar.conhecaTesouro() 
+    acessar.connhecatesouro() 
      
 
   })
 
  it('Conheça As Regras',() =>{
-   acessar.conhecaRegras()
+   acessar.conhecaregras()
     
   })
    
  it('Conheça Bancos e Corretoras Habilitadas',() =>{
-   acessar.conhecaBancos()
+   acessar.conhecabancos()
      
   })
 
  it('Conheça Institucional',() =>{
-   acessar.conhecaInstitucional() 
+   acessar.conhecainstitucional() 
       
   })
     

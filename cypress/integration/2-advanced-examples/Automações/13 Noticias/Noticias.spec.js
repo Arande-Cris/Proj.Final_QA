@@ -6,8 +6,8 @@ import acessar from "../13 Noticias/Index(noticias)"
 describe('Validar Noticias', () =>{
 
   beforeEach(() => {
-        acessar.visitarpagina()
-        acessar.EntrarMenuNoticia()
+      acessar.visitarpagina()
+      acessar.EntrarMenuNoticia()
     })
 
    it('Entrar Noticia 1',()=>{

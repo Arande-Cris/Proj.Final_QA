@@ -1,34 +1,23 @@
 /// <reference types="cypress" />
-
-import acessar from "../6 Seu Título Só Investir/index(6)"
 const el = require ("../6 Seu Título Só Investir/Elements(6)").TESOURO
+import acessar from "../6 Seu Título Só Investir/index(6)"
 
 
 
 describe('Títulos Para Só investir', () =>{
 
-    it('Acessar Pagina',() =>{
-        acessar.visitarpagina()
-
-    })
-
-    it('Descubra Seu Título: Só investir',() =>{
-        acessar.visitarpagina()
-        acessar.EntrarMenuDescubra()
-
+    beforeEach(() => {
+      acessar.visitarpagina()
+      acessar.entrarmenudescubra()
     })
 
     it('Simulando Tesouro Selic 2024 Aporte Inicial + Mensal',() =>{
-        acessar.visitarpagina()
-        acessar.EntrarMenuDescubra()
-        acessar.SimularSelic2024()
+     acessar.simularselic2024()
 
     })
 
     it('Simulando Tesouro Selic 2024 Quanto resgatar',() =>{
-        acessar.visitarpagina()
-        acessar.EntrarMenuDescubra()
-        acessar.SimularSelic2024QTOResgatar()
+      acessar.simularselic2024resgatar()
 
     })
     

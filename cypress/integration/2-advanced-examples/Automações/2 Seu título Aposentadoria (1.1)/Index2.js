@@ -13,14 +13,14 @@ class acessar{
 
     }
 
-    APOSENTADORIASEMPRAZO(){
+    aposentadoriasemprazo(){
         cy.get(el.MENU).click()
         cy.get(el.TITULO).click({force: true})
         cy.get(el.SUBTITULO).click({force: true})
         cy.get(el.COMECO).click()
         cy.get(el.OBJETIVO).click({force: true})
-        cy.get(el.PRAZO).click({force: true})
-        cy.get(el.COOKIE).click()
+        cy.get(el.PRAZO).click({Force: true})
+        
         }
    
        //RETORNAR EM TELA RESULTADOS

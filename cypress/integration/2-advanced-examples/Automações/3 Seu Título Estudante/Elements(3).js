@@ -27,6 +27,11 @@ export const TESOURO ={
     DIGITAREMAIL:'#digite-seu-email',
     EMAIL:'jarldovahkiin55@gmail.com',
     ENVIAR:'.tdsimu-modal__body > .btn',
+    SUGESTAO: '.tdsim-investment-values__card__title',
+    POPUPERRO:'.tdsimu-modal__header',
+    CONFIRMDEENVIO: '.tdsimu-resultado__buttons > .tdsimu__link-modal > .tdsimu-modal > .tdsimu-modal__content > .tdsimu-modal__header > .tdsimu-modal__header__title',
+    CONFIRMDEENVIO2: '.tdsimu-email-enviado',
+
 }
 
 
